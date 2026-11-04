@@ -8,10 +8,10 @@ function RotaPrivada({ children, perm }) {
 
   if (carregando) {
     return(
-      <div id="loading-screen" class="loading-container">
-        <div class="loading-content">
+      <div id="loading-screen" className="loading-container">
+        <div className="loading-content">
          
-          <center><div class="loader"></div></center>
+          <center><div className="loader"></div></center>
           <h2 id="loading-title">Preparando seu ambiente...</h2>
           <p id="loading-text">Estamos organizando os dados para você.</p>
           

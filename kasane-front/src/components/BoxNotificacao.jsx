@@ -8,10 +8,11 @@ export default function BoxNotificacao({mensagem, subtexto, cor, onClose}){
                 <TriangleAlert size={30}/>
             </div>
             <p className="box-noti__text">
-                    {mensagem} <br />
-                <div className="box-noti__text-small">
-                    {subtexto}
-                </div>
+                {mensagem}
+            </p>
+            
+            <p className="box-noti__text-small">
+                {subtexto}
             </p>
             <button onClick={onClose}>
                 <X size={30}/>
