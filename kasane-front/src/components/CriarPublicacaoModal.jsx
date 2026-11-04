@@ -109,7 +109,7 @@ function CriarPublicacaoModal({ onClose, onSubmit }) {
           </div>
 
           <div className="form-field">
-            <label className="form-field__label" htmlFor="area_publicacao">Área de publicação *</label>
+            <label className="form-field__label" htmlFor="setor_id">Área de publicação *</label>
             <div className="input-wrapper">
               <select
                 className="input input--icon select"
@@ -119,6 +119,7 @@ function CriarPublicacaoModal({ onClose, onSubmit }) {
                 onChange={handleChange}
                 required
               >
+                <option value="">Selecione uma opção</option>
                 <option value={usuario?.empresas?.setor_geral}>Geral</option>
                 <option value={usuario?.setors?.setor_id}>{usuario?.setors?.nome}</option>
               </select>

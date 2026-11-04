@@ -55,7 +55,7 @@ class PublicacaoController extends Controller
             'funcionario_id'    => $funcionario->funcionario_id,
             'setor_id'          => $dados['setor_id'],
             'autor'             => $funcionario->nome,
-            'autor_foto'        => $funcionario->foto ?? null,
+            'autor_foto'        => $funcionario->foto ?? "",
             'autor_setor'       => $funcionario->setors->nome,
             'autor_cargo'       => $funcionario->cargo,
         ]);
